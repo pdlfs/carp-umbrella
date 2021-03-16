@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@dev.pdl.cmu.edu:pdlfs/umbrella
+	branch = master
+	commit = 17479326390e6e241ea7a75119114645906e2bc0
+	parent = 2d9c3153a7cb54ac95320cdce33c3981f0523a12
+	cmdver = 0.3.1
