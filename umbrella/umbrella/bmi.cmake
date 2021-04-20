@@ -15,9 +15,9 @@ if (NOT TARGET bmi)
 #
 # umbrella option variables
 #
-umbrella_defineopt (BMI_REPO "https://xgitlab.cels.anl.gov/sds/bmi.git"
+umbrella_defineopt (BMI_REPO "https://github.com/radix-io/bmi.git"
                     STRING "BMI GIT repository")
-umbrella_defineopt (BMI_TAG "master" STRING "BMI GIT tag")
+umbrella_defineopt (BMI_TAG "main" STRING "BMI GIT tag")
 umbrella_defineopt (BMI_TAR "bmi-${BMI_TAG}.tar.gz" STRING "BMI cache tar file")
 
 #
