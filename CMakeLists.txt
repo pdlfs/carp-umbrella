@@ -90,18 +90,18 @@ list(APPEND UMBRELLA_CMAKECACHE
 # set git tags to the versions we want to stick to by default...
 #
 umbrella_opt_default (BMI_TAG "6ea0b78f")             # Jan 2020
-umbrella_opt_default (CH_PLACEMENT_TAG "97fd3158")    # Jul 2019
+umbrella_opt_default (CH_PLACEMENT_TAG "ab096ee0")    # Feb 2022
 umbrella_opt_default (DELTAFS_COMMON_TAG "v19.8")
 umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
-umbrella_opt_default (DELTAFS_SHUFFLE_TAG "bba0a2f6") # Feb 2020
+umbrella_opt_default (DELTAFS_SHUFFLE_TAG "a20890d9") # Apr 2021
 umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "refactor-carp")
 umbrella_opt_default (DELTAFS_TAG "range-writer")
 umbrella_opt_default (MERCURY_PROGRESSOR_TAG "6892c220") # Oct 2020
-umbrella_opt_default (MERCURY_RUNNER_TAG "381abae2")  # Oct 2020
-umbrella_opt_default (MERCURY_TAG "df2fef78")         # Oct 2020
+umbrella_opt_default (MERCURY_RUNNER_TAG "cbe7a219")  # Apr 2021
+umbrella_opt_default (MERCURY_TAG "3f6b5484")         # Feb 2022
 umbrella_opt_default (MSSG_TAG "v1.4")
-umbrella_opt_default (NEXUS_RUNNER_TAG "40003c0d")    # Feb 2020
-umbrella_opt_default (OFI_TAG "a593d160")             # Jun 2019
+umbrella_opt_default (NEXUS_RUNNER_TAG "04ee7e8a")    # Apr 2021
+umbrella_opt_default (OFI_TAG "1a89deaa")             # Feb 2022
 umbrella_opt_default (PDLFS_SCRIPTS_TAG "carp")
 
 #
