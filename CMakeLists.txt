@@ -90,6 +90,7 @@ list(APPEND UMBRELLA_CMAKECACHE
 # set git tags to the versions we want to stick to by default...
 #
 umbrella_opt_default (BMI_TAG "6ea0b78f")             # Jan 2020
+umbrella_opt_default (CARP_TAG "master")
 umbrella_opt_default (CH_PLACEMENT_TAG "ab096ee0")    # Feb 2022
 umbrella_opt_default (DELTAFS_COMMON_TAG "v19.8")
 umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
@@ -143,6 +144,7 @@ set (PDLFS_OPTIONS -DPDLFS_MERCURY_RPC=ON -DPDLFS_SNAPPY=OFF
                    -DPDLFS_GFLAGS=OFF -DPDLFS_GLOG=OFF
                    -DPDLFS_VERBOSE=${DELTAFS_VERBOSE})
 
+include (umbrella/carp)
 include (umbrella/ch-placement)
 include (umbrella/deltafs)
 include (umbrella/deltafs-common)
