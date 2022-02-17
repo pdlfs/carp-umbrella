@@ -102,6 +102,7 @@ umbrella_opt_default (MERCURY_TAG "3f6b5484")         # Feb 2022
 umbrella_opt_default (MSSG_TAG "v1.4")
 umbrella_opt_default (NEXUS_RUNNER_TAG "04ee7e8a")    # Apr 2021
 umbrella_opt_default (OFI_TAG "1a89deaa")             # Feb 2022
+umbrella_opt_default (ONETBB_TAG "6666292f")          # Feb 2022
 umbrella_opt_default (PDLFS_SCRIPTS_TAG "carp")
 
 #
@@ -153,5 +154,6 @@ include (umbrella/mercury-progressor)
 include (umbrella/mercury-runner)
 include (umbrella/mssg)
 include (umbrella/nexus-runner)
+include (umbrella/onetbb)
 include (umbrella/pdlfs-scripts)
 include (umbrella/${my-vpic-inc})
