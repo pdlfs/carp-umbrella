@@ -97,6 +97,9 @@ umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
 umbrella_opt_default (DELTAFS_SHUFFLE_TAG "a20890d9") # Apr 2021
 umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "refactor-carp")
 umbrella_opt_default (DELTAFS_TAG "range-writer")
+# HDF5/H5PART only used if CARP_H5PART turned on
+umbrella_opt_default (HDF5_TAG "develop")
+umbrella_opt_default (H5PART_TAG "master")
 umbrella_opt_default (MERCURY_PROGRESSOR_TAG "6892c220") # Oct 2020
 umbrella_opt_default (MERCURY_RUNNER_TAG "cbe7a219")  # Apr 2021
 umbrella_opt_default (MERCURY_TAG "3f6b5484")         # Feb 2022
@@ -136,6 +139,15 @@ message (STATUS "  deltafs_verbose: ${DELTAFS_VERBOSE}")
 # set other configs before we start pulling in the pieces...
 #
 
+# enable CARP_H5PART to build carp's vpicwriter_runner (requires hdf5/h5part)
+umbrella_opt_default (CARP_H5PART OFF)
+if (CARP_H5PART)      # carp always requires parallel (MPI) HDF5 support
+  umbrella_opt_default (HDF5_ENABLE_PARALLEL ON)
+  if (NOT HDF5_ENABLE_PARALLEL)
+    message(FATAL_ERROR "CARP_H5PART: requires HDF5_ENABLE_PARALLEL=ON")
+  endif()
+endif (CARP_H5PART)
+
 # note: NA_INITIALLY_ON is only applied as the defaults the first time
 # you run cmake.  if you want to reconfigure, change MERCURY_BMI, et al.
 umbrella_opt_default (MERCURY_NA_INITIALLY_ON "bmi;ofi;sm")
@@ -151,6 +163,9 @@ include (umbrella/deltafs-common)
 include (umbrella/deltafs-nexus)
 include (umbrella/deltafs-shuffle)
 include (umbrella/deltafs-vpic-preload)
+if (CARP_H5PART)
+  include (umbrella/h5part)
+endif(CARP_H5PART)
 include (umbrella/mercury)
 include (umbrella/mercury-progressor)
 include (umbrella/mercury-runner)
