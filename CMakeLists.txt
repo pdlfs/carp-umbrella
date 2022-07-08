@@ -141,12 +141,6 @@ message (STATUS "  deltafs_verbose: ${DELTAFS_VERBOSE}")
 
 # enable CARP_H5PART to build carp's vpicwriter_runner (requires hdf5/h5part)
 umbrella_opt_default (CARP_H5PART OFF)
-if (CARP_H5PART)      # carp always requires parallel (MPI) HDF5 support
-  umbrella_opt_default (HDF5_ENABLE_PARALLEL ON)
-  if (NOT HDF5_ENABLE_PARALLEL)
-    message(FATAL_ERROR "CARP_H5PART: requires HDF5_ENABLE_PARALLEL=ON")
-  endif()
-endif (CARP_H5PART)
 
 # note: NA_INITIALLY_ON is only applied as the defaults the first time
 # you run cmake.  if you want to reconfigure, change MERCURY_BMI, et al.
