@@ -1,5 +1,7 @@
 **Download, build, and install carp (and its dependencies) in a single step.**
 
+[![CI](https://github.com/pdlfs/carp-umbrella/actions/workflows/ci.yml/badge.svg)](https://github.com/pdlfs/carp-umbrella/actions/workflows/ci.yml)
+
 carp-umbrella
 ================
 
