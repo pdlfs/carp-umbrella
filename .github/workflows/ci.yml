@@ -112,7 +112,7 @@ jobs:
                 -DCMAKE_BUILD_TYPE="$CI_BUILDTYPE" \
                 -DVPIC407=ON \
                 -DMERCURY_NA_INITIALLY_ON="bmi;sm" \
-                -DUMBRELLA_RUNTESTS=OFF -DUMBRELLA_BUILDTESTS=ON \
+                -DUMBRELLA_RUNTESTS=OFF -DUMBRELLA_BUILDTESTS=OFF \
                 -DBUILD_TESTS=ON ..
           echo "cmake done"
 
