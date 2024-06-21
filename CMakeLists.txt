@@ -92,7 +92,9 @@ list(APPEND UMBRELLA_CMAKECACHE
 umbrella_opt_default (BMI_TAG "6ea0b78f")             # Jan 2020
 umbrella_opt_default (CARP_TAG "master")
 umbrella_opt_default (CH_PLACEMENT_TAG "ab096ee0")    # Feb 2022
-umbrella_opt_default (DELTAFS_COMMON_TAG "v19.8")
+# for deltafs-common, use the commit before we updated
+# the logging to glog v0.7.0
+umbrella_opt_default (DELTAFS_COMMON_TAG "a495ed8")
 umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
 umbrella_opt_default (DELTAFS_SHUFFLE_TAG "a20890d9") # Apr 2021
 umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "master")
@@ -108,6 +110,7 @@ umbrella_opt_default (NEXUS_RUNNER_TAG "04ee7e8a")    # Apr 2021
 umbrella_opt_default (OFI_TAG "1a89deaa")             # Feb 2022
 umbrella_opt_default (ONETBB_TAG "6666292f")          # Feb 2022
 umbrella_opt_default (PDLFS_SCRIPTS_TAG "carp")
+umbrella_opt_default (GLOG_TAG "v0.6.0")
 
 #
 # vpic selection.  vpic407 is the old depreciated vpic code base.
@@ -146,7 +149,7 @@ umbrella_opt_default (CARP_H5PART OFF)
 # you run cmake.  if you want to reconfigure, change MERCURY_BMI, et al.
 umbrella_opt_default (MERCURY_NA_INITIALLY_ON "bmi;ofi;sm")
 
-umbrella_opt_default (UMBRELLA_USE_GLOG ON)
+set (UMBRELLA_USE_GLOG ON CACHE BOOL "Use glog for logging")
 
 set (PDLFS_OPTIONS -DPDLFS_MERCURY_RPC=ON -DPDLFS_SNAPPY=OFF
                    -DPDLFS_GFLAGS=OFF -DPDLFS_GLOG=${UMBRELLA_USE_GLOG}
