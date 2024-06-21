@@ -95,7 +95,7 @@ umbrella_opt_default (CH_PLACEMENT_TAG "ab096ee0")    # Feb 2022
 umbrella_opt_default (DELTAFS_COMMON_TAG "v19.8")
 umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
 umbrella_opt_default (DELTAFS_SHUFFLE_TAG "a20890d9") # Apr 2021
-umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "refactor-carp")
+umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "master")
 umbrella_opt_default (DELTAFS_TAG "range-writer")
 # HDF5/H5PART only used if CARP_H5PART turned on
 umbrella_opt_default (HDF5_TAG "develop")
@@ -146,8 +146,10 @@ umbrella_opt_default (CARP_H5PART OFF)
 # you run cmake.  if you want to reconfigure, change MERCURY_BMI, et al.
 umbrella_opt_default (MERCURY_NA_INITIALLY_ON "bmi;ofi;sm")
 
+umbrella_opt_default (UMBRELLA_USE_GLOG ON)
+
 set (PDLFS_OPTIONS -DPDLFS_MERCURY_RPC=ON -DPDLFS_SNAPPY=OFF
-                   -DPDLFS_GFLAGS=OFF -DPDLFS_GLOG=OFF
+                   -DPDLFS_GFLAGS=OFF -DPDLFS_GLOG=${UMBRELLA_USE_GLOG}
                    -DPDLFS_VERBOSE=${DELTAFS_VERBOSE})
 
 include (umbrella/carp)
