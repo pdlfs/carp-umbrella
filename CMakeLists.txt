@@ -98,7 +98,7 @@ umbrella_opt_default (DELTAFS_COMMON_TAG "v19.8")
 umbrella_opt_default (DELTAFS_NEXUS_TAG "v1.19")
 umbrella_opt_default (DELTAFS_SHUFFLE_TAG "a20890d9") # Apr 2021
 umbrella_opt_default (DELTAFS_VPIC_PRELOAD_TAG "master")
-umbrella_opt_default (DELTAFS_TAG "range-writer")
+umbrella_opt_default (DELTAFS_TAG "master")
 # HDF5/H5PART only used if CARP_H5PART turned on
 umbrella_opt_default (HDF5_TAG "develop")
 umbrella_opt_default (H5PART_TAG "master")
