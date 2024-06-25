@@ -1,4 +1,4 @@
-**Download, build, and install carp (and its dependencies) in a single step.**
+**Download, build, and install CARP (and its dependencies) in a single step.**
 
 [![CI](https://github.com/pdlfs/carp-umbrella/actions/workflows/ci.yml/badge.svg)](https://github.com/pdlfs/carp-umbrella/actions/workflows/ci.yml)
 
@@ -7,7 +7,7 @@ carp-umbrella
 
 ## Overview
 
-This package is designed for quickly setting up carp on various computing platforms ranging from commodity clusters to highly-optimized HPC systems used in national labs. The package features an automated process that downloads, builds, and installs carp (including its software dependencies) in a single step.
+This package is designed for quickly setting up CARP on various computing platforms ranging from commodity clusters to highly-optimized HPC systems used in national labs. The package features an automated process that downloads, builds, and installs carp (including its software dependencies) in a single step.
 
 Written atop cmake, carp-umbrella is expected to work with major computing platforms. We have successfully tested carp-umbrella on CMU PDL Narwhal, LANL Trinity, LANL Grizzly, NERSC Edison, and NERSC Cori.
 
@@ -35,7 +35,7 @@ cd $HOME/carp
 
 # After installation, we will have the following:
 #
-# $HOME/deltafs
+# $HOME/carp
 #  -- bin
 #  -- include
 #  -- lib
