@@ -122,8 +122,8 @@ if(VPIC407)
     umbrella_opt_default (PDLFS_SCRIPTS_VPIC407 1)
     message (STATUS "  vpic: vpic 407 selected (depreciated)")
 else()
-    umbrella_opt_default (VPIC_TAG "master")
-    umbrella_opt_default (VPIC_DECKS_TAG "master")
+    umbrella_opt_default (VPIC_TAG "c2e9be14")            # Sep 2019
+    umbrella_opt_default (VPIC_DECKS_TAG "1c2ce168")      # Aug 2019
     set (my-vpic-inc vpic-decks)                          # pulls vpic
     umbrella_opt_default (PDLFS_SCRIPTS_VPIC407 0)
     message (STATUS "  vpic: vpic main selected")
