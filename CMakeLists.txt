@@ -90,7 +90,7 @@ list(APPEND UMBRELLA_CMAKECACHE
 # set git tags to the versions we want to stick to by default...
 #
 umbrella_opt_default (BMI_TAG "6ea0b78f")             # Jan 2020
-umbrella_opt_default (CARP_TAG "v1.0")
+umbrella_opt_default (CARP_TAG "v1.01")
 umbrella_opt_default (CH_PLACEMENT_TAG "ab096ee0")    # Feb 2022
 # for deltafs-common, use the commit before we updated
 # the logging to glog v0.7.0
@@ -109,7 +109,7 @@ umbrella_opt_default (MSSG_TAG "v1.4")
 umbrella_opt_default (NEXUS_RUNNER_TAG "04ee7e8a")    # Apr 2021
 umbrella_opt_default (OFI_TAG "1a89deaa")             # Feb 2022
 umbrella_opt_default (ONETBB_TAG "6666292f")          # Feb 2022
-umbrella_opt_default (PDLFS_SCRIPTS_TAG "carpv1.0")
+umbrella_opt_default (PDLFS_SCRIPTS_TAG "carpv1.01")
 umbrella_opt_default (GLOG_TAG "v0.6.0")
 
 #
