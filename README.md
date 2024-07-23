@@ -65,13 +65,11 @@ make install
 
 ### Using cache.0.tar
 
-The provided `cache.0.tar` in releases may be used for a fully offline/self-contained build. After cloning or unzipping `carp-umbrella`, follow these steps:
+The provided tars in `cache.0/` may be used for a fully offline/self-contained build. After cloning or unzipping `carp-umbrella`, follow these steps:
 
 ```
 # Execute these after cloning, but before building!
 
-tar -xf /path/to/cache.0.tar -C /path/to/carp-umbrella
-cd /path/to/carp-umbrella
 cp cache.0/* cache/
 
 # Ensure that carp-umbrella/cache has similar contents:
