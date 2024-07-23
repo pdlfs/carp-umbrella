@@ -1,3 +1,4 @@
-cached archives of distributions may be placed in this directory
-to avoid downloading (e.g. if there is no internet available or
-if bandwidth is limited).
+cached tar.gz archives of distributions should be placed or linked
+into this directory to avoid downloading (e.g. if there is no internet
+available or if bandwidth is limited).  archive names include
+the tag/version in the filename (e.g.  foo-TAG.tar.gz ).

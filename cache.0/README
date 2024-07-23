@@ -1,1 +1,2 @@
-git lfs (large file) distribution files for the cache may be placed here.
+distribution files for the cache may be stored here.  to use them,
+copy or link them into the main cache directory.
