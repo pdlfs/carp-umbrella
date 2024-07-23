@@ -63,6 +63,17 @@ make install
 
 ```
 
+### Using cache.0.tar
+
+The provided `cache.0.tar` in releases may be used for a fully offline/self-contained build. After cloning or unzipping `carp-umbrella`, follow these steps:
+
+```
+tar -xf /path/to/cache.0.tar -C /path/to/carp-umbrella
+cd /path/to/carp-umbrella
+cp cache.0/* cache/
+# ... build as usual, cached tars will be used instead of git repos
+```
+
 #### stdatomic.h
 
 Mercury RPC, one critical deltafs dependency, implements atomic counters using whatever is available on the current system (e.g., OPA library, stdatomic.h, OSX's OSAtomic.h, the windows API). On Linux, when the C compiler (such as gcc 4.8 or eariler) cannot provide stdatomic.h, the OPA (Open Portable Atomics) library must be installed in order to compile mercury. There are at least 3 ways to install this library. The easiest way is to install CCI along with mercury since CCI uses and will install OPA alongside itself. In addition, MPICH also ships with OPA so installing MPICH will install OPA too. Finally, one can always compile and install OPA as a standalone library: https://github.com/pmodels/openpa.
