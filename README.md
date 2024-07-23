@@ -68,9 +68,21 @@ make install
 The provided `cache.0.tar` in releases may be used for a fully offline/self-contained build. After cloning or unzipping `carp-umbrella`, follow these steps:
 
 ```
+# Execute these after cloning, but before building!
+
 tar -xf /path/to/cache.0.tar -C /path/to/carp-umbrella
 cd /path/to/carp-umbrella
 cp cache.0/* cache/
+
+# Ensure that carp-umbrella/cache has similar contents:
+# cache
+# |-- bmi-6ea0b78f.tar.gz
+# |-- carp-v1.01.tar.gz
+# |-- ch-placement-ab096ee0.tar.gz
+# |-- deltafs-common-v24.0.tar.gz
+# |-- deltafs-nexus-v1.19.tar.gz
+# ...
+
 # ... build as usual, cached tars will be used instead of git repos
 ```
 
